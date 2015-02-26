@@ -2,25 +2,30 @@
 
 <div class="three fields">
       <div class="four wide field">
-  {{view "select" content=climate prompt='select climate'}}
+  {{view "select" content=climate value=selectedClimate prompt='select climate'}}
     </div>
       <div class="four wide field">
-  {{view "select" content=terrain prompt='select terrain'}}
+  {{view "select" content=terrain value=selectedTerrain prompt='select terrain'}}
       </div>
       <div class="four wide field">
-  {{view "select" content=population prompt='select population'}}
+  {{view "select" content=population value=selectedPopulation prompt='select population'}}
       </div>
-    </div>
+      <div id='submit' class='small ui button' {{action 'searchPlanets'}}>
+        Submit
+      </div>
   </div>
 </div>
 
 <div id='op' class="one column stackable ui grid">
   <div class="column">
     <div id='moveleft' class="ui segment">
-      <h1>Planets</h1>
-      {{#each planet in model}}
+      <p>
+        Welcome to the Imperial Trip Planner, operated by the Gallactic Empire.
+        Simply choose your ideal climate and terrain, and a list of possible destinations will appear!
+      </p>
+      {{#each planet in planets}}
       <li>{{planet.name}}</li>
-      <p>{{planet.terrain}}</p>
+      {{bind-attr src=imageURL}}
       {{/each}}
    </div>
   <div>

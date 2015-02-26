@@ -1,20 +1,29 @@
 #moveleft {
   margin-left: 20px;
   margin-top: 10px;
+  margin-right: 20px;
+
 }
 #fuckthis {
-  margin-left: 200px;
+  margin-left: 150px;
   margin-top: 20px;
 }
 body{
-  background-image: url("http://img3.wikia.nocookie.net/__cb20130219055704/starwars/images/9/98/Avenger-ROTJ.png")
+  background-image: url("http://phosproject.com/wp-content/themes/phos_theme/images/7.jpg")
 }
 #op {
-  opacity: 0.5;
+  opacity: 0.9;
 }
 #logo{
   width: 200px;
   height: 100px;
   margin-left: 375px;
   margin-top: 10px;
+}
+#submit {
+padding-top: 4px;
+padding-bottom: 4px;
+margin-top: 0px;
+padding-left: 10px;
+padding-right: 10px;
 }

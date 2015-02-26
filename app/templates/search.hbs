@@ -1,0 +1,31 @@
+<div  id='fuckthis' class="ui form">
+
+<div class="three fields">
+      <div class="four wide field">
+  {{view "select" content=climate prompt='select climate'}}
+    </div>
+      <div class="four wide field">
+  {{view "select" content=terrain prompt='select terrain'}}
+      </div>
+      <div class="four wide field">
+  {{view "select" content=population prompt='select population'}}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id='op' class="one column stackable ui grid">
+  <div class="column">
+    <div id='moveleft' class="ui segment">
+      <h1>Planets</h1>
+      {{#each planet in model}}
+      <li>{{planet.name}}</li>
+      <p>{{planet.terrain}}</p>
+      {{/each}}
+   </div>
+  <div>
+</div>
+
+
+
+{{outlet}}

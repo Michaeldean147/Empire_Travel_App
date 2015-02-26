@@ -1,0 +1,20 @@
+#moveleft {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+#fuckthis {
+  margin-left: 200px;
+  margin-top: 20px;
+}
+body{
+  background-image: url("http://img3.wikia.nocookie.net/__cb20130219055704/starwars/images/9/98/Avenger-ROTJ.png")
+}
+#op {
+  opacity: 0.5;
+}
+#logo{
+  width: 200px;
+  height: 100px;
+  margin-left: 375px;
+  margin-top: 10px;
+}

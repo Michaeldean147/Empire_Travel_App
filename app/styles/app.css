@@ -8,8 +8,9 @@
   margin-left: 150px;
   margin-top: 20px;
 }
+
 body{
-  background-image: url("http://phosproject.com/wp-content/themes/phos_theme/images/7.jpg")
+  background-image: url("/assets/spaceBackground.jpg")
 }
 #op {
   opacity: 0.9;
@@ -30,6 +31,16 @@ padding-right: 10px;
 
 #planetShowInfo{
   margin-left: 138px;
-  margin-top: -176px;
+  margin-top: 0px;
 
+}
+
+#searchStatus{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#planetName{
+  font-weight: bold;
+  text-decoration: underline;
 }

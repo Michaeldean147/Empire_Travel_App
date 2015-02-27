@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   imagePath: function() {
-    return "/assets/"+this.get("planet.image");
-  }.property('imageID')
+    var pic = this.get('model.image')
+    return "/assets/" + pic;
+  }.property('model.image')
 });

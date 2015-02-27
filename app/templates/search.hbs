@@ -23,14 +23,14 @@
         Welcome to the Imperial Trip Planner, operated by the Gallactic Empire.
         Simply choose your ideal climate and terrain, and a list of possible destinations will appear!
       </p>
-      {{#each planet in planets}}
-      <li>{{planet.name}}</li>
-      {{bind-attr src=imageURL}}
-      {{/each}}
+        {{#each planet in planets}}
+        <li>
+          {{#link-to "search.show" planet}}
+          {{planet.name}}
+        </li>
+          {{/link-to}}
+          {{/each}}
+        {{outlet}}
    </div>
-  <div>
+ </div>
 </div>
-
-
-
-{{outlet}}

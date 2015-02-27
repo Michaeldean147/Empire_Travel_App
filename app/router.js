@@ -6,7 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('search', {path: "/"});
+  this.route('search', {path: "/search"}, function() {
+    this.route('show', {path: "/:planet_id"});
+  });
 });
 
 export default Router;

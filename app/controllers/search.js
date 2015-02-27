@@ -4,8 +4,7 @@ export default Ember.ArrayController.extend({
   climate: ["arid", "temperate", "frozen", "murky", "hot"],
   terrain: ["desert", "grasslands", "mountains", "jungle", "canyons", "lakes", "forests", "oceans", "urban"],
   population: ["small (value - value)", "medium (value - value)", "large (value - value)"],
-  imageUrl: 'http://lolcats.info/haz-a-funny'
-  actions: {
+    actions: {
 		searchPlanets: function() {
 			var inputClimate = this.get('selectedClimate');
 			var inputTerrain = this.get('selectedTerrain');

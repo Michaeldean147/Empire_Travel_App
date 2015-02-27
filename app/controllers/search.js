@@ -4,7 +4,7 @@ export default Ember.ArrayController.extend({
   climate: ["arid", "temperate", "frozen", "murky", "hot"],
   terrain: ["desert", "grasslands", "mountains", "jungle", "canyons", "lakes", "forests", "oceans", "urban"],
   population: ["small", "medium", "large"],
-  message: "Your Results Will Appear Below",
+  message: "",
     actions: {
 		searchPlanets: function() {
 			var inputClimate = this.get('selectedClimate');

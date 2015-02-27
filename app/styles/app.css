@@ -32,7 +32,7 @@ padding-right: 10px;
 #planetShowInfo{
   margin-left: 138px;
   margin-top: 0px;
-
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1)));
 }
 
 #searchStatus{
@@ -43,4 +43,40 @@ padding-right: 10px;
 #planetName{
   font-weight: bold;
   text-decoration: underline;
+}
+
+#planetSearchResults{
+  width: 110px;
+}
+
+#indexWell{
+  margin-top: 100px;
+  margin-left: 90px;
+  margin-right:90px;
+}
+
+#empireLogo{
+  height: 200px;
+  width: 200px;
+}
+
+#indexLogoBox{
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1)));
+}
+
+
+#indexWellHeader{
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: -33px;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(181,189,200,1)), color-stop(36%,rgba(130,140,149,1)), color-stop(100%,rgba(40,52,59,1)));
+}
+
+#indexStartLink{
+  margin-top: -30px;
+  padding-bottom: 29px;
+}
+
+#indexVideo{
+  margin-top: -40px;
 }

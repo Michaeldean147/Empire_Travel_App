@@ -20,20 +20,24 @@
   <div class="column">
     <div id='moveleft' class="ui segment">
       <p>
-        Welcome to the Imperial Trip Planner, operated by the Gallactic Empire.
-        Simply choose your ideal climate and terrain, and a list of possible destinations will appear!
+        Welcome to the Imperial Trip Planner, Operated By The Galactic Empire.
+        To View Your Potential Destinations, Simply Choose Your Ideal Climate, Terrain, and Population Above!
         <div id="searchStatus">
-          {{message}}
+          <h2>{{message}}</h2>
         </div>
       </p>
+      <div>
         {{#each planet in planets}}
-        <li>
-          {{#link-to "search.show" planet}}
-          {{planet.name}}
+        <li id="planetSearchResults">
+          <div id="planetListName">
+            {{#link-to "search.show" planet}}
+            {{planet.name}}
+          </div>
         </li>
-          {{/link-to}}
-          {{/each}}
-        {{outlet}}
-   </div>
+        {{/link-to}}
+        {{/each}}
+      </div>
+      {{outlet}}
+    </div>
  </div>
 </div>
